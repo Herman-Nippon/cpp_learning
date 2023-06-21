@@ -35,6 +35,7 @@
 build/*
 main.cpp
 test.cpp
+text_files/*
 
 .vscode
 
