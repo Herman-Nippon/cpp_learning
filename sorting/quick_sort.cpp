@@ -81,12 +81,13 @@ int main(int argc, char *argv[])
         std::cout << "To change the default size (10), enter it as an argument when running\n";
     }
 
-    int array[size];
+    int* array = new int[size];
 
     fill_array_random(array, size);
     print_array(array, size);
     quick_sort(array, 0, size - 1);
     print_array(array, size);
 
+    delete[] array;
     return 0;
 }
